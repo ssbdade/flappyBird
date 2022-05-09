@@ -42,7 +42,6 @@ class Scoring(pygame.sprite.Sprite):
         self.score_surface = game_font.render(str(self.score), True, (255, 255, 255))
         self.high_score_surface = game_font.render(str(high_score), True, (255, 255, 255))
         self.move_score_box()
-        self.draw()
         self.collision = False
         for box in score_rect_ls:
             if bird.bird_rect.colliderect(box):

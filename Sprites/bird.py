@@ -28,7 +28,7 @@ class Bird(pygame.sprite.Sprite):
 
     def jump(self):
         self.bird_movement = 0
-        self.bird_movement -= 3.5
+        self.bird_movement -= 5
         flap_sound.play()
 
     def rotate_bird(self, bird1):
