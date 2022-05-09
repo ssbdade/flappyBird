@@ -26,10 +26,6 @@ class Scoring(pygame.sprite.Sprite):
                 score_rect_ls.pop(0)
         return score_rect_ls
 
-    def draw(self):
-        for box in score_rect_ls:
-            screen.blit(self.surface, box)
-
     def score_display(self, game_state):
         if game_state == 'main game':
             screen.blit(self.score_surface, self.score_rect)
